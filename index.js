@@ -1,10 +1,9 @@
 var m1 = angular.module('app', []);
-m1.directive('hello', function () {
+m1.directive('myTab', function () {
     return {
-        restrict:'EA',
-        template : '<p>这是一个组件</p>'
+        restrict:'E',
+        templateUrl : './tmp.html' 
     }
 });
 m1.controller('aaa', ['$scope', function ($scope) {
-
 }]);
