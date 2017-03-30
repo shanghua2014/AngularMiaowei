@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="jquery.1.12.4.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="index.js"></script>
     <style>
-        .active{background: red;}
+        .active{background: red;color:#fff}
         input{border:1px solid}
-        #div1 div, #div2 div{display: none;widht:100px;height:100px;border:1px solid;}
+        #div1 div, #div2 div{display: none;width:100px;height:100px;border:1px solid;}
     </style>
 </head>
 <body>
     <div ng-controller="aaa">
-        <my-tab shang-hua="div1" my-name="name" my-fn="show(num)"></my-tab>
-        <my-tab shang-hua="div2" my-name="name" my-fn="show(num)"></my-tab>
+        <my-tab my-id="div1" my-data="data1"></my-tab>
+        <my-tab my-id="div2" my-data="data2"></my-tab>
     </div>
-    <script src="angular.min.js"></script>
-    <script src="index.js"></script>
+    
 </body>
 </html>
